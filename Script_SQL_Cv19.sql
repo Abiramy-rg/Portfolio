@@ -1,5 +1,3 @@
--- Select Data that we are going to be starting with
-
 SELECT 
     Location 
     ,date
@@ -10,8 +8,8 @@ SELECT
 FROM CovidDeaths
 ORDER BY 1,2
 
--- Percentage of deaths compared to the number of cases
--- Observations : From November 7, 2020 the percentage of deaths compared to the number of cases stabilizes at around 2%. It remains within the world average which is also 2.2%.
+-- Pourcentage de décès
+-- Observations : À partir du 7 novembre 2020, le pourcentage de décès par rapport au nombre de cas se stabilise autour de 2 %. Il reste proche de la moyenne mondiale qui est également de 2,2 %.
 
 SELECT 
     Location
@@ -25,8 +23,8 @@ WHERE Location like 'France'
 ORDER BY 1,2
 
 
--- Percentage of population infected with Covid
--- Observations : The percentage of covid infected in France exceeds the 5% mark on February 9, 2021. From this date this percentage increases almost twice as fast.
+-- Pourcentage de la population infectée par le Covid
+-- Observations : Le pourcentage de personnes infectées en France dépasse le seuil des 5 % le 9 février 2021. À partir de cette date, cette proportion augmente presque deux fois plus rapidement.
 
 SELECT 
     Location 
@@ -38,8 +36,8 @@ FROM CovidDeaths
 WHERE Location like '%france'
 ORDER BY 1,2
 
--- Countries with Highest Infection Rate compared to Population
--- Observations : As of April 30, 2021, Andorra is the country with the highest rate of infected people compared to the number of population of the country with 17% of people infected. France is positioned in 17th place (8.3%)
+-- Pays avec le taux d'infection le plus élevé par rapport à la population
+-- Observations : Au 30 avril 2021, Andorre est le pays présentant le taux le plus élevé de population infectée avec 17 %. La France se situe en 17e position avec 8,3 %.
 
 SELECT 
     Location
@@ -51,8 +49,8 @@ GROUP BY Location, population
 ORDER BY infected_population_percentage desc 
 
 
--- Countries with highest death count in Europe
--- Observations : As of April 30, 2021, the United Kingdom is the country with the highest number of deaths with 127,775 deaths. France is 4th (104,675)
+-- Pays avec le plus grand nombre de décès en Europe
+-- Observations : Au 30 avril 2021, le Royaume-Uni est le pays ayant enregistré le plus grand nombre de décès avec 127 775 décès. La France se classe en 4e position avec 104 675 décès.
 
 SELECT 
     Location
@@ -66,8 +64,8 @@ GROUP BY Location, population
 ORDER BY total_deaths_count desc 
 
 
--- Contintents with the highest death count
--- Observations : Europe has the most deaths from covid as of April 30, 2021 with 1,016,750 deaths. This is 2 times more than Asia which has 520,286 deaths
+-- Continents avec le plus grand nombre de décès
+-- Observations : L’Europe est le continent ayant enregistré le plus grand nombre de décès liés au Covid au 30 avril 2021 avec 1 016 750 décès. Ce chiffre est environ deux fois supérieur à celui de l’Asie qui compte 520 286 décès.
 
 SELECT 
     continent
@@ -85,8 +83,8 @@ GROUP BY continent
 ORDER BY total_deaths_count desc
 
 
--- Global KPIs
--- Observations : As of April 30, 2021, for 150,574,977 cases of covid identified there are 3,180,206 deaths in the world which gives us a rate of 2.11% of deaths compared to the number of people infected knowing that less than 1% of the world population is infected with covid at this time.
+-- Indicateurs globaux (KPIs)
+-- Observations : Au 30 avril 2021, pour 150 574 977 cas de Covid identifiés, on compte 3 180 206 décès dans le monde, soit un taux de décès de 2,11 % par rapport au nombre de personnes infectées, alors que moins de 1 % de la population mondiale est infectée à cette date.
 
 SELECT 
     SUM(population) as total_population
@@ -100,8 +98,8 @@ where continent is not null
 order by 1,2
 
 
--- Percentage of population that has recieved at least one covid vaccine in France
--- The first people vaccinated in France is on December 28, 2020. At the beginning only a hundred people were vaccinated but from January 6, 2021, the number of vaccines exploded, exceeding 10,000 vaccines per day
+-- Pourcentage de la population ayant reçu au moins une dose de vaccin contre le Covid en France
+-- Les premières vaccinations en France ont eu lieu le 28 décembre 2020. Au début, seulement une centaine de personnes étaient vaccinées, mais à partir du 6 janvier 2021, le nombre de vaccinations a fortement augmenté, dépassant les 10 000 injections par jour.
 
 SELECT 
     dea.continent 
@@ -118,8 +116,8 @@ WHERE
 ORDER BY 2,3
 
 
--- Percentage of people vaccinated in France day after day
--- On April 30, 2021, 30% of french population was vaccinated knowing that not even 0.01% of French people were vaccinated at the very beginning of the year
+-- Évolution du pourcentage de personnes vaccinées en France jour après jour
+-- Au 30 avril 2021, 30 % de la population française était vaccinée, alors qu’au tout début de l’année, moins de 0,01 % de la population avait reçu une dose.
 
 With PopvsVac (Continent, Location, Date, Population, New_Vaccinations, RollingPeopleVaccinated) as (
     SELECT 
@@ -140,7 +138,7 @@ SELECT * , ROUND((CAST(RollingPeopleVaccinated as FLOAT)/Population)*100, 2) vac
 FROM PopvsVac
 
 
--- Storing results in an intermediate table
+-- Stockage des résultats dans une table intermédiaire
 
 DROP TABLE IF EXISTS PercentPopulationVaccinated
 CREATE TABLE PercentPopulationVaccinated (
@@ -168,12 +166,5 @@ INSERT INTO PercentPopulationVaccinated
 ORDER BY 2,3
 
 
-
 SELECT * , ROUND((CAST(RollingPeopleVaccinated as FLOAT)/Population)*100, 2) vaccinated_population_percentage
 From PercentPopulationVaccinated
-
-
-
-
-
-
