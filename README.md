@@ -37,7 +37,7 @@ Cette étape a permis de :
 
 ---
 
-#### *Visualisation et analyse*
+#### *Tableau de bord*
 
 Un tableau de bord interactif a été développé avec Power BI afin de restituer les résultats de l’analyse de manière synthétique et exploitable.
 
@@ -53,6 +53,13 @@ L’ensemble des visualisations est interactif et se met à jour en fonction des
 
 ---
 
+#### *Analyse et points clés*
+- La pandémie montre une forte hétérogénéité géographique
+- Les taux de mortalité restent relativement stables autour de 2 %
+- À l’échelle continentale, l’Europe est la plus impactée avec environ 1 016 750 décès, soit environ deux fois plus que l’Asie (~520 286 décès)
+- La vaccination introduit une accélération marquée à partir de 2021
+  
+---
 #### *Ressources*
 
 - [Données Covid](https://github.com/Abiramy-rg/Portfolio/blob/ae2323572e385a74f49e9df5b76ba5ad81f6e97a/Donne%CC%81es%20Covid.csv)
