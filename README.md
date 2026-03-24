@@ -42,4 +42,3 @@ Ressources
 •	Jeu de données : 
 •	Scripts SQL utilisés pour l’exploration : 
 •	Rapport / fichier Power BI :
-<img width="470" height="645" alt="image" src="https://github.com/user-attachments/assets/aa5257df-75f3-47b2-aaec-ed7856bca6e3" />
