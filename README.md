@@ -12,7 +12,15 @@ Ce projet vise à analyser les données relatives à la pandémie de COVID-19 à
 
 L’analyse porte sur plusieurs indicateurs clés, notamment les cas confirmés, les décès et les vaccinations, suivis dans le temps et comparés entre différents pays. 
 
-L’objectif est de fournir une lecture claire de l’évolution de la pandémie, ainsi que de mettre en évidence les disparités géographiques et temporelles.
+---
+
+#### *Objectifs*
+
+- Étudier l’évolution globale de la pandémie  
+- Comparer l’impact entre les pays et les différentes régions  
+- Identifier les potentiels tendances temporelles  
+- Restituer les résultats sous forme de visualisation interactive  
+
 
 ---
 
@@ -42,15 +50,6 @@ Ce dashboard permet notamment :
 - explorer dynamiquement les relations entre les différentes variables  
 
 L’ensemble des visualisations est interactif et se met à jour en fonction des filtres sélectionnés, permettant une analyse flexible et approfondie.
-
----
-
-#### *Objectifs*
-
-- Étudier l’évolution globale de la pandémie  
-- Comparer l’impact entre les pays et les différentes régions  
-- Identifier les potentiels tendances temporelles  
-- Restituer les résultats sous forme de visualisation interactive  
 
 ---
 
