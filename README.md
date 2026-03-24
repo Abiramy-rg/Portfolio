@@ -20,7 +20,7 @@ Une phase d’exploration a été réalisée à l’aide de SQL afin d’interro
 Cette étape a permis de :
 - comprendre la structure du jeu de données  
 - analyser les principaux indicateurs  
-- agréger les données par pays et par période  
+- combiner les données par pays et par période  
 - identifier des tendances significatives  
 - préparer les données pour l’analyse et la visualisation  
 
@@ -31,12 +31,12 @@ Cette étape a permis de :
 Un tableau de bord interactif a été développé avec Power BI afin de restituer les résultats de l’analyse de manière synthétique et exploitable.
 
 Ce dashboard permet notamment :
-- de suivre les principaux indicateurs (cas, décès, vaccinations)  
-- de visualiser la répartition géographique des données  
-- d’identifier les pays les plus impactés  
-- d’analyser l’évolution des indicateurs dans le temps  
-- de filtrer les données selon différents critères (date, pays, continent)  
-- d’explorer dynamiquement les relations entre les différentes variables  
+- suivre les principaux indicateurs (cas, décès, vaccinations)  
+- visualiser la répartition géographique des données
+- identifier les pays les plus impactés  
+- analyser l’évolution des indicateurs dans le temps  
+- filtrer les données selon différents critères (date, pays, continent)  
+- explorer dynamiquement les relations entre les différentes variables  
 
 L’ensemble des visualisations est interactif et se met à jour en fonction des filtres sélectionnés, permettant une analyse flexible et approfondie.
 
@@ -45,9 +45,8 @@ L’ensemble des visualisations est interactif et se met à jour en fonction des
 #### *Objectifs*
 
 - Étudier l’évolution globale de la pandémie  
-- Comparer l’impact entre les pays et les régions  
-- Identifier des tendances temporelles  
-- Mettre en place une approche structurée d’analyse de données  
+- Comparer l’impact entre les pays et les différentes régions  
+- Identifier les potentiels tendances temporelles  
 - Restituer les résultats sous forme de visualisation interactive  
 
 ---
