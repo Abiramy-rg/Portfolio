@@ -1,19 +1,19 @@
 # Projets
 
-# <b>Projet - Covid-19</b>
+### <b>Projet - Covid-19</b>
 
-## *Analyse des données mondiales COVID-19*
+#### *Analyse des données mondiales COVID-19*
 
 ---
 
-## *Présentation du projet*
+#### *Présentation du projet*
 
 Ce projet a pour objectif d’analyser les données relatives à la pandémie de COVID-19 à l’échelle mondiale sur la période allant de janvier 2020 à avril 2021.  
 L’analyse porte sur plusieurs indicateurs clés, notamment les cas confirmés, les décès et les vaccinations, suivis dans le temps et comparés entre différents pays. L’objectif est de fournir une lecture claire de l’évolution de la pandémie, ainsi que de mettre en évidence les disparités géographiques et temporelles.
 
 ---
 
-## *Exploration des données*
+#### *Exploration des données*
 
 Une phase d’exploration a été réalisée à l’aide de SQL afin d’interroger les données brutes et d’en extraire des informations pertinentes.
 
@@ -26,7 +26,7 @@ Cette étape a permis de :
 
 ---
 
-## *Visualisation et analyse*
+#### *Visualisation et analyse*
 
 Un tableau de bord interactif a été développé avec Power BI afin de restituer les résultats de l’analyse de manière synthétique et exploitable.
 
@@ -42,7 +42,7 @@ L’ensemble des visualisations est interactif et se met à jour en fonction des
 
 ---
 
-## *Objectifs*
+#### *Objectifs*
 
 - Étudier l’évolution globale de la pandémie  
 - Comparer l’impact entre les pays et les régions  
@@ -52,7 +52,7 @@ L’ensemble des visualisations est interactif et se met à jour en fonction des
 
 ---
 
-## *Ressources*
+#### *Ressources*
 
 - Données Covid
 - Scripts SQL  
