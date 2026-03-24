@@ -56,6 +56,6 @@ L’ensemble des visualisations est interactif et se met à jour en fonction des
 
 #### *Ressources*
 
-- Données Covid
-- Scripts SQL  
-- Tableau de bord Power BI (consultable seulement avec la version desktop)  
+- [Données Covid](https://github.com/Abiramy-rg/Portfolio/blob/ae2323572e385a74f49e9df5b76ba5ad81f6e97a/Donne%CC%81es%20Covid.csv)
+- [Scripts SQL](https://github.com/Abiramy-rg/Portfolio/blob/ae2323572e385a74f49e9df5b76ba5ad81f6e97a/Script_SQL_Cv19.sql)  
+- [Tableau de bord Power BI](https://github.com/Abiramy-rg/Portfolio/blob/ae2323572e385a74f49e9df5b76ba5ad81f6e97a/Tableau%20de%20bord%20.pbix)  
