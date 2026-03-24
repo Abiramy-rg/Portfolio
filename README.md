@@ -9,7 +9,9 @@
 #### *Présentation du projet*
 
 Ce projet a pour objectif d’analyser les données relatives à la pandémie de COVID-19 à l’échelle mondiale sur la période allant de janvier 2020 à avril 2021.  
-L’analyse porte sur plusieurs indicateurs clés, notamment les cas confirmés, les décès et les vaccinations, suivis dans le temps et comparés entre différents pays. L’objectif est de fournir une lecture claire de l’évolution de la pandémie, ainsi que de mettre en évidence les disparités géographiques et temporelles.
+
+L’analyse porte sur plusieurs indicateurs clés, notamment les cas confirmés, les décès et les vaccinations, suivis dans le temps et comparés entre différents pays. 
+L’objectif est de fournir une lecture claire de l’évolution de la pandémie, ainsi que de mettre en évidence les disparités géographiques et temporelles.
 
 ---
 
